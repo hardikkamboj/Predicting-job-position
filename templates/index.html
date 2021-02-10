@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<div>
+<h1 align="center">Welcome to the Job Position Prediction Service</h1>
+</div>
+
+<div style="text-align:center">
+<img src="{{url_for('static', filename='job.png')}}" height="500" width="750">
+</div>
+
+<div style="width:700px;margin:0 auto;text-align:center">
+
+    This is an example of a machine learning model being deployed using Flask and
+    Scikit-Learn! You can interact with the machine learning model that was built
+    to predict the position of a job given its job description. 
+    Please Enter the Job Description in the box below - 
+</div>
+
+<div>
+    <form align="center" method="POST">
+        <input style="width:400px" name="text">
+        <input type="submit">
+    </form>
+</div>
+
+<p align="center">This Job is for - </p>
+<h2 align="center">{{ text }}</h2>
+</body>
+</html>
